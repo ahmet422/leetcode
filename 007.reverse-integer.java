@@ -39,16 +39,18 @@
  * within the 32-bit signed integer range: [−2^31,  2^31 − 1]. For the purpose
  * of this problem, assume that your function returns 0 when the reversed
  * integer overflows.
- * 
  */
 class Solution {
     public int reverse(int x) {
         int result = 0;
         while (x != 0) {
-            if (result >= Integer.MAX_VALUE / 10 || result <= Integer.MIN_VALUE / 10) {
+            int pop = x % 10;
+            if (result > Integer.MAX_VALUE / 10 || (result == Integer.MAX_VALUE / 10 && pop > 7)) {
                 return 0;
             }
-            int pop = x % 10;
+            if (result < Integer.MIN_VALUE / 10 || (result == Integer.MIN_VALUE / 10 && pop < -8)) {
+                return 0;
+            }
             x /= 10;
             result = result * 10 + pop;
         }
