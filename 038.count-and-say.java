@@ -1,6 +1,4 @@
 /*-
- * @lc app=leetcode id=38 lang=java
- *
  * [38] Count and Say
  *
  * https://leetcode.com/problems/count-and-say/description/

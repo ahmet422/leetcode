@@ -1,6 +1,4 @@
-/*
- * @lc app=leetcode id=1 lang=java
- *
+/*-
  * [1] Two Sum
  *
  * https://leetcode.com/problems/two-sum/description/
@@ -29,7 +27,8 @@
  * 
  * 
  */
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 class Solution {
     public int[] twoSum(int[] nums, int target) {

@@ -1,6 +1,4 @@
 /*-
- * @lc app=leetcode id=28 lang=java
- *
  * [28] Implement strStr()
  *
  * https://leetcode.com/problems/implement-strstr/description/

@@ -1,6 +1,4 @@
-/*
- * @lc app=leetcode id=14 lang=java
- *
+/*-
  * [14] Longest Common Prefix
  *
  * https://leetcode.com/problems/longest-common-prefix/description/
