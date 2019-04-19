@@ -8,6 +8,8 @@
 
 Given a non-negative integer *numRows*, generate the first *numRows* of Pascal's triangle.
 
+![PascalTriangleAnimated2.gif](https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif)
+
 In Pascal's triangle, each number is the sum of the two numbers directly above it.
 
 **Example:**
@@ -22,6 +24,7 @@ Output:
   [1,3,3,1],
  [1,4,6,4,1]
 ]
+
 ```
 
 | Similar Questions |
