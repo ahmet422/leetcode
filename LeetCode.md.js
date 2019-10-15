@@ -112,7 +112,7 @@
         if (!t) return "";
         var e = document.createElement("div");
         return e.innerHTML = t.innerHTML, e.querySelectorAll("pre").forEach(t => {
-            var e = (t.textContent || "").replace(/^[\r\n]+/, "").replace(/[\r\n]+$/, "");
+            var e = (t.textContent || "").replace(/^[\r\n]+/, "").replace(/[\r\n]+$/, "").replace(/\u00a0/g, " ");
             t.outerHTML = e ? `\n\n\`\`\`\n${e}\n\`\`\`\n\n` : ""
         }), e.querySelectorAll("strong").forEach(t => {
             var e = (t.textContent || "").trim();
